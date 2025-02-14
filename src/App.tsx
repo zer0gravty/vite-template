@@ -1,7 +1,11 @@
+import { Button } from "./components/ui/button"
+
 function App() {
   return (
     <div className='app-ctr w-full h-dvh flex'>
-        <h1 className="text-2xl font-bold flex w-full justify-center items-center">Hello.</h1>
+        <div className="flex justify-center items-center w-full">
+          <Button className='bg-blue-600'>Click me.</Button>
+        </div>
     </div>
   )
 }
