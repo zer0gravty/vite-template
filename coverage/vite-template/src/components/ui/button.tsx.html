@@ -157,33 +157,33 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Slot } from "@radix-ui/react-slot";
-import { type VariantProps, cva } from "class-variance-authority";
-import * as React from "react";
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { Slot } from '@radix-ui/react-slot';
+import { type VariantProps, cva } from 'class-variance-authority';
+import * as React from 'react';
 &nbsp;
-import { cn } from "@/lib/utils";
+import { cn } from '@/lib/utils';
 &nbsp;
 const buttonVariants = cva(
 	"inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-[color,box-shadow] disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*='size-'])]:size-4 [&amp;_svg]:shrink-0 ring-ring/10 dark:ring-ring/20 dark:outline-ring/40 outline-ring/50 focus-visible:ring-4 focus-visible:outline-1 aria-invalid:focus-visible:ring-0",
@@ -191,26 +191,26 @@ const buttonVariants = cva(
 		variants: {
 			variant: {
 				default:
-					"bg-primary text-primary-foreground shadow-sm hover:bg-primary/90",
+					'bg-primary text-primary-foreground shadow-sm hover:bg-primary/90',
 				destructive:
-					"bg-destructive text-destructive-foreground shadow-xs hover:bg-destructive/90",
+					'bg-destructive text-destructive-foreground shadow-xs hover:bg-destructive/90',
 				outline:
-					"border border-input bg-background shadow-xs hover:bg-accent hover:text-accent-foreground",
+					'border border-input bg-background shadow-xs hover:bg-accent hover:text-accent-foreground',
 				secondary:
-					"bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80",
-				ghost: "hover:bg-accent hover:text-accent-foreground",
-				link: "text-primary underline-offset-4 hover:underline",
+					'bg-secondary text-secondary-foreground shadow-xs hover:bg-secondary/80',
+				ghost: 'hover:bg-accent hover:text-accent-foreground',
+				link: 'text-primary underline-offset-4 hover:underline',
 			},
 			size: {
-				default: "h-9 px-4 py-2 has-[&gt;svg]:px-3",
-				sm: "h-8 rounded-md px-3 has-[&gt;svg]:px-2.5",
-				lg: "h-10 rounded-md px-6 has-[&gt;svg]:px-4",
-				icon: "size-9",
+				default: 'h-9 px-4 py-2 has-[&gt;svg]:px-3',
+				sm: 'h-8 rounded-md px-3 has-[&gt;svg]:px-2.5',
+				lg: 'h-10 rounded-md px-6 has-[&gt;svg]:px-4',
+				icon: 'size-9',
 			},
 		},
 		defaultVariants: {
-			variant: "default",
-			size: "default",
+			variant: 'default',
+			size: 'default',
 		},
 	},
 );
@@ -221,11 +221,11 @@ function Button({
 	size,
 	asChild = false,
 	...props
-}: React.ComponentProps&lt;"button"&gt; &amp;
+}: React.ComponentProps&lt;'button'&gt; &amp;
 	VariantProps&lt;typeof buttonVariants&gt; &amp; {
 		asChild?: boolean;
 	}) {
-	const Comp = <span class="branch-0 cbranch-no" title="branch not covered" >asChild ? Slot : "</span>button";
+	const Comp = <span class="branch-0 cbranch-no" title="branch not covered" >asChild ? Slot : '</span>button';
 &nbsp;
 	return (
 		&lt;Comp
@@ -244,7 +244,7 @@ export { Button, buttonVariants };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-02-14T20:22:02.794Z
+                at 2025-02-14T23:26:40.428Z
             </div>
         <script src="../../../../prettify.js"></script>
         <script>
