@@ -10,7 +10,8 @@
     "lint": "npx @biomejs/biome check --write .",
     "preview": "vite preview",
     "test:unit": "vitest",
-    "test:unit:coverage": "vitest run --coverage"
+    "test:unit:coverage": "vitest run --coverage",
+    "test:int": "npx playwright test"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
@@ -24,6 +25,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
+    "@playwright/test": "^1.50.1",
     "@tailwindcss/vite": "^4.0.6",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
