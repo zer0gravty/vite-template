@@ -1,34 +1,63 @@
 {
-	"workbench.colorCustomizations": {
-		"activityBar.activeBackground": "#432d9f",
-		"activityBar.background": "#432d9f",
-		"activityBar.foreground": "#e7e7e7",
-		"activityBar.inactiveForeground": "#e7e7e799",
-		"activityBarBadge.background": "#000000",
-		"activityBarBadge.foreground": "#e7e7e7",
-		"commandCenter.border": "#e7e7e799",
-		"sash.hoverBorder": "#432d9f",
-		"statusBar.background": "#322277",
-		"statusBar.foreground": "#e7e7e7",
-		"statusBarItem.hoverBackground": "#432d9f",
-		"statusBarItem.remoteBackground": "#322277",
-		"statusBarItem.remoteForeground": "#e7e7e7",
-		"titleBar.activeBackground": "#322277",
-		"titleBar.activeForeground": "#e7e7e7",
-		"titleBar.inactiveBackground": "#32227799",
-		"titleBar.inactiveForeground": "#e7e7e799"
-	},
-	"peacock.color": "#322277",
-	"files.associations": {
-		"*.css": "tailwindcss"
-	},
-	"editor.quickSuggestions": {
-		"strings": "on"
-	},
-	"tailwindCSS.includeLanguages": {
-		"typescriptreact": "html"
-	},
-	"[javascript]": {
-		"editor.defaultFormatter": "biomejs.biome"
-	}
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#432d9f",
+    "activityBar.background": "#432d9f",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#000000",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#432d9f",
+    "statusBar.background": "#322277",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#432d9f",
+    "statusBarItem.remoteBackground": "#322277",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#322277",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#32227799",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#322277",
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "tailwindCSS.includeLanguages": {
+    "typescriptreact": "html"
+  },
+  "editor.defaultFormatter": "biomejs.biome",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": false,
+
+  "[typescript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  }
 }

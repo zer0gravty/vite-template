@@ -4,12 +4,12 @@ import { describe, expect, it } from 'vitest';
 import App from './App';
 
 describe('App', () => {
-	it('renders "Hello!" button ', async () => {
-		render(<App />);
-		const helloBtn = screen.getByRole('button', { name: 'Hello!' });
-		expect(helloBtn).toBeVisible();
+  it('renders "Hello!" button ', async () => {
+    render(<App />);
+    const helloBtn = screen.getByRole('button', { name: 'Hello!' });
+    expect(helloBtn).toBeVisible();
 
-		await userEvent.click(helloBtn);
-		expect(screen.getByText('Hi there!')).toBeVisible();
-	});
+    await userEvent.click(helloBtn);
+    expect(screen.getByText('Hi there!')).toBeVisible();
+  });
 });
