@@ -1,5 +1,3 @@
-import { ChevronRight, type LucideIcon } from 'lucide-react';
-
 import {
   Collapsible,
   CollapsibleContent,
@@ -16,8 +14,9 @@ import {
   SidebarMenuSubItem,
 } from '@/components/ui/sidebar';
 import { Link } from '@tanstack/react-router';
+import { ChevronRight, type LucideIcon } from 'lucide-react';
 
-export function NavMain({
+function AppSidebarMain({
   items,
 }: {
   items: {
@@ -68,3 +67,5 @@ export function NavMain({
     </SidebarGroup>
   );
 }
+
+export default AppSidebarMain;

@@ -26,7 +26,7 @@ type Props = {
   teams: Team[];
 };
 
-function AppSidebarSwitcher({ teams }: Props) {
+function AppSwitcher({ teams }: Props) {
   const { isMobile } = useSidebar();
   const [activeTeam, setActiveTeam] = useState<Team | null>(null);
 
@@ -89,4 +89,4 @@ function AppSidebarSwitcher({ teams }: Props) {
   );
 }
 
-export default AppSidebarSwitcher;
+export default AppSwitcher;

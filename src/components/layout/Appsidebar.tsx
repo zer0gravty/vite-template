@@ -1,4 +1,4 @@
-import { NavMain } from '@/components/layout/nav-main';
+import AppSwitcher from '@/components/blocks/AppSwitcher';
 import {
   Sidebar,
   SidebarContent,
@@ -18,9 +18,9 @@ import {
   Settings2,
   SquareTerminal,
 } from 'lucide-react';
-import AppSidebarSwitcher from './app-context';
+import AppSidebarMain from './AppSidebarMain';
 
-// This is sample data.
+// TODO: This is sample data.
 const data = {
   teams: [
     {
@@ -148,13 +148,13 @@ const data = {
 function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar collapsible="icon" {...props}>
-      <SidebarHeader>
-        <AppSidebarSwitcher teams={data.teams} />
+      <SidebarHeader className="bg-cyan-700">
+        <AppSwitcher teams={data.teams} />
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} />
+        <AppSidebarMain items={data.navMain} />
       </SidebarContent>
-      <SidebarFooter>SidebarFooter</SidebarFooter>
+      <SidebarFooter>{''}</SidebarFooter>
       <SidebarRail />
     </Sidebar>
   );
